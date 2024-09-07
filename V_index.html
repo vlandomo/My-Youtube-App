@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>video</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <link rel="stylesheet" href="V_styles.css">
+</head>
+
+<body>
+ <div class="video-container paused" data-volume-level="high">
+  <img class="thumbnail-img">
+  <div class="video-controls-container">
+   <div class="timeline-container">
+    <div class="timeline">
+     <img class="preview-img">
+     <div class="thumb-indicator"></div>
+    </div>
+   </div>
+   <div class="controls">
+    <button class="play-pause-btn">
+     <svg class="play-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+     </svg>
+     <svg class="pause-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+     </svg>
+    </button>
+    <div class="duration-container">
+     <div class="current-time">0:00</div>
+     /
+     <div class="total-time"></div>
+    </div>
+    <button class="captions-btn">
+     <svg viewBox="0 0 24 24">
+      <path fill="currentColor" d="M18,11H16.5V10.5H14.5V13.5H16.5V13H18V14A1,1 0 0,1 17,15H14A1,1 0 0,1 13,14V10A1,1 0 0,1 14,9H17A1,1 0 0,1 18,10M11,11H9.5V10.5H7.5V13.5H9.5V13H11V14A1,1 0 0,1 10,15H7A1,1 0 0,1 6,14V10A1,1 0 0,1 7,9H10A1,1 0 0,1 11,10M19,4H5C3.89,4 3,4.89 3,6V18A2,2 0 0,0 5,20H19A2,2 0 0,0 21,18V6C21,4.89 20.1,4 19,4Z" />
+     </svg>
+    </button>
+    <button class="speed-btn wide-btn">
+     1x
+    </button>
+    <!-- screen size -->
+    <button class="theater-btn">
+     <svg class="tall" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
+     </svg>
+     <svg class="wide" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z" />
+     </svg>
+    </button>
+   </div>
+  </div>
+  <video src="video/Yasser.mp4" class="video" autoplay>
+   <track kind="captions" srclang="en" src="subtitles.vtt">
+  </video>
+ </div>
+ <!-------------------------->
+ <section>
+  <div class="video-itemV">
+   <a href="">
+    <div class="vidtitleV">
+     <h3>The best channel on the internet, watch before deletion </h3>
+     <p>7k views <span>more...</span></p>
+    </div>
+   </a>
+   <div class="viddesV">
+    <a href="">
+     <img src="images/mv.jpg" alt="error">
+     <h3>Channel name</h3>
+    </a>
+    <div class="bell">
+     <button><i class="fa-solid fa-chevron-down"></i><i class="fa-solid fa-bell"></i></button>
+    </div>
+   </div>
+
+   <!-- small bar -->
+   <div class="navbar-subV">
+
+    <a href="test.html">
+     <div class="sub-itemV"><i class="fa-regular fa-thumbs-up"></i><span class="ldl">|</span><i class="fa-regular fa-thumbs-down"></i></div>
+    </a>
+    <a href="test.html">
+     <div class="sub-itemV"><i class="fa-solid fa-share"></i><span class="wspan">share</span></div>
+    </a>
+    <a href="test.html">
+     <div class="sub-itemV"><i class="fa-solid fa-download"></i><span class="wspan">Download</span></div>
+    </a>
+    <a href="test.html">
+     <div class="sub-itemV"><i class="fa-solid fa-scissors"></i><span class="wspan">create video</span></div>
+    </a>
+    <a href="test.html">
+     <div class="sub-itemV"><i class="fa-regular fa-bookmark"></i><span class="wspan">Save</span></div>
+    </a>
+    <a href="test.html">
+     <div class="sub-itemV"><i class="fa-regular fa-flag"></i><span class="wspan">Report</span></div>
+    </a>
+    <!-- أضف المزيد من العناصر هنا إذا لزم الأمر -->
+   </div>
+   <div class="Vidcomment">
+    <div class="VidCoT">
+     <p>Comments <span>20</span></p>
+    </div>
+    <div class="comment">
+     <img src="images/mv.jpg" alt="img">
+     <p>comment title</p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!------------------------->
+ <section class="content">
+  <!-- media -->
+  <div class="video-list">
+   <!-- video1 -->
+   <div class="video-item">
+    <a href="test.html" class="vid-link">
+     <div>
+      <img src="images/mv.jpg" alt="Video Thumbnail">
+     </div>
+     <div class="vidtitle">
+      <div>
+       <a href="account.html">
+        <img src="images/mv.jpg" alt="error">
+       </a>
+      </div>
+      <div class="viddes">
+       <a href="test.html">
+        <h3>The best channel on the internet, watch before deletion </h3>
+        <p>Channel name<span>&bull; 5.5M views </span><span>5 days ago </span></p>
+       </a>
+      </div>
+     </div>
+    </a>
+   </div>
+
+   <!-- video2 -->
+   <div class="video-item">
+    <a href="test.html" class="vid-link">
+     <div>
+      <img src="images/mv.jpg" alt="Video Thumbnail">
+     </div>
+     <div class="vidtitle">
+      <div>
+       <a href="account.html">
+        <img src="images/mv.jpg" alt="error">
+       </a>
+      </div>
+      <div class="viddes">
+       <a href="test.html">
+        <h3>The best channel on the internet, watch before deletion </h3>
+        <p>Channel name<span>&bull; 5.5M views </span><span>5 days ago </span></p>
+       </a>
+      </div>
+     </div>
+    </a>
+   </div>
+
+   <!-- video1 -->
+   <div class="video-item">
+    <a href="test.html" class="vid-link">
+     <div>
+      <img src="images/mv.jpg" alt="Video Thumbnail">
+     </div>
+     <div class="vidtitle">
+      <div>
+       <a href="account.html">
+        <img src="images/mv.jpg" alt="error">
+       </a>
+      </div>
+      <div class="viddes">
+       <a href="test.html">
+        <h3>The best channel on the internet, watch before deletion </h3>
+        <p>Channel name<span>&bull; 5.5M views </span><span>5 days ago </span></p>
+       </a>
+      </div>
+     </div>
+    </a>
+   </div>
+
+   <!-- video1 -->
+   <div class="video-item">
+    <a href="test.html" class="vid-link">
+     <div>
+      <img src="images/mv.jpg" alt="Video Thumbnail">
+     </div>
+     <div class="vidtitle">
+      <div>
+       <a href="account.html">
+        <img src="images/mv.jpg" alt="error">
+       </a>
+      </div>
+      <div class="viddes">
+       <a href="test.html">
+        <h3>The best channel on the internet, watch before deletion </h3>
+        <p>Channel name<span>&bull; 5.5M views </span><span>5 days ago </span></p>
+       </a>
+      </div>
+     </div>
+    </a>
+   </div>
+   <!-- more video -->
+ </section>
+ <script src="V_script.js" defer></script>
+</body>
+
+</html>
