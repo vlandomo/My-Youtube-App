@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>video player</title>
+  </head>
+  <body>
+    <main class="video-contant">
+        <a href="javascript:history.back()" class="nav-item back-btn"><i class="fa-solid fa-arrow-right"></i></a>
+      <section class="main-video">
+        <video controls autoplay poster="mv.jpg">
+          <source src="4.mp4" type="video/mp4" />
+          <track
+            src="subtitles-en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+          />
+        </video>
+      </section>
+
+      <section class="video-info">
+        <article class="top-row">
+          <h1>
+            How do you multiply your sources of income and where do you start?
+          </h1>
+          <div class="view-time">
+            <div class="data">
+              <p id="view-number">123k</p>
+              <p>.view</p>
+            </div>
+            <div class="data">
+              <p id="hour-number">18</p>
+              <p>.hours ago</p>
+            </div>
+            <button>more...</button>
+          </div>
+        </article>
+
+        <article class="middle-row">
+          <div class="channal-info">
+            <img src="mv.jpg" alt="channal img" />
+            <h2>MV mohamed</h2>
+            <p>295</p>
+          </div>
+          <button>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </article>
+
+        <article class="bottom-row">
+          <div class="video-Interact">
+            <button class="like-dislike">
+              <i class="fa-solid fa-thumbs-up"></i>
+            </button>
+            <span>123</span>
+            <span>|</span>
+            <button class="like-dislike">
+              <i class="fa-solid fa-thumbs-down"></i>
+            </button>
+          </div>
+          <div class="video-Interact">
+            <button><i class="fa-solid fa-share"></i></button>
+            <span>share</span>
+          </div>
+          <div class="video-Interact">
+            <button><i class="fa-solid fa-download"></i></button>
+            <span>download</span>
+          </div>
+          <div class="video-Interact">
+            <button><i class="fa-solid fa-flag"></i></button>
+            <span>report</span>
+          </div>
+        </article>
+
+        <article href="test.html" class="comments">
+          <div class="comment-number">
+            <h3>comments</h3>
+            <span>5</span>
+          </div>
+          <div class="coment-box">
+            <img src="mv.jpg" alt="user img" />
+            <p>this is a good video</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="Video-suggestion">
+        <div class="video-item">
+          <a href="video2.html" class="vid-link">
+            <div>
+              <img src="mv.jpg" alt="Video Thumbnail" />
+            </div>
+            <div class="vidtitle">
+              <div>
+                <a href="#">
+                  <img src="mv.jpg" alt="error" />
+                </a>
+              </div>
+              <div class="viddes">
+                <a href="test.html">
+                  <h3>
+                    The best channel on the internet, watch before deletion
+                  </h3>
+                  <p>
+                    Channel name<span>&bull; 5.5M views </span
+                    ><span>5 days ago </span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
