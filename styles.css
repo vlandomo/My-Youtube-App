@@ -651,13 +651,39 @@ body {
 .video-contant .main-video video {
   width: 100%;
   height: auto;
+  /* max-height: 230px; */
 }
+
 /***** info section *****/
 .video-contant .video-info {
   display: flex;
   flex-direction: column;
   padding: 0 15px;
-  margin-top: 250px;
+  /* margin-top: 250px; */
+}
+@media (max-width: 370px) {
+  .video-contant .video-info{
+    margin-top: 215px;
+  }
+  
+}
+@media (min-width: 375px) and (max-width:400px){
+  .video-contant .video-info{
+    margin-top: 230px;
+  }
+  
+}
+@media (min-width: 410px) and (max-width:450px){
+  .video-contant .video-info{
+    margin-top: 250px;
+  }
+  
+}
+@media (min-width: 768px) {
+  .video-contant .video-info{
+    margin-top: 460px;
+  }
+  
 }
 /*** top ***/
 .video-contant .video-info .top-row {
