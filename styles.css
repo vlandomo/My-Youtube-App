@@ -895,7 +895,7 @@ body {
 
 @media (max-width: 370px) {
   .video-contant .video-info {
-    margin-top: 280px;
+    margin-top: 215px;
   }
 }
 @media (min-width: 375px) and (max-width: 400px) {
@@ -905,7 +905,7 @@ body {
 }
 @media (min-width: 410px) and (max-width: 450px) {
   .video-contant .video-info {
-    margin-top: 330px;
+    margin-top: 250px;
   }
 }
 @media (min-width: 768px) {
