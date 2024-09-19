@@ -465,10 +465,10 @@ body {
   margin-top: 5px;
 }
 
-.Channel-description {
+.channel-description {
   margin: 0 0 20px 15px;
 }
-.Channel-description p {
+.channel-description p {
   color: var(--pac);
   font-size: 0.9rem;
 }
