@@ -259,10 +259,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
-.acontent .h-menu {
-  margin-top: 20px;
-}
-.acontent .h-menu .acontent-title {
+.acontent .acontent-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -270,11 +267,11 @@ body {
   color: var(--tic);
   font-size: 0.9rem;
 }
-.acontent .h-menu .acontent-title h2 {
+.acontent .acontent-title h2 {
   font-size: 1.1rem;
   font-weight: 600;
 }
-.acontent .h-menu .acontent-title button {
+.acontent .acontent-title button {
   display: flex;
   padding: 5px 10px;
   border: none;
@@ -286,41 +283,41 @@ body {
   font-weight: 500;
 }
 
-.acontent .h-menu .acontent-title button:active {
+.acontent .acontent-title button:active {
   background: var(--active);
 }
 
-.acontent .h-menu .avideo-list {
+.acontent .avideo-list {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin: 0 0 0 15px;
 }
-.acontent .h-menu .avideo-list::-webkit-scrollbar {
+.acontent .avideo-list::-webkit-scrollbar {
   overflow: hidden;
 }
 
-.acontent .h-menu .avideo-list .avideo-item {
+.acontent .avideo-list .avideo-item {
   flex: 0 0 auto;
   margin-right: 10px;
   width: 150px;
 }
-.acontent .h-menu .avideo-list .avideo-item img {
+.acontent .avideo-list .avideo-item img {
   width: 100%;
   height: 50%;
   border-radius: 15px;
   object-fit: cover;
 }
 
-.acontent .h-menu .avideo-list .avideo-item .avid-link h3 {
+.acontent .avideo-list .avideo-item .avid-link h3 {
   margin: 10px 0 5px;
   font-size: 1rem;
   font-weight: 500;
   color: var(--tic);
 }
 
-.acontent .h-menu .avideo-list .avideo-item .avid-link p {
+.acontent .avideo-list .avideo-item .avid-link p {
   font-size: 1rem;
   font-weight: 500;
   color: var(--pac);
