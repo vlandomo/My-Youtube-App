@@ -494,17 +494,17 @@ body {
 }
 
 /* Navigation Tabs */
-.navigation-btn {
+.ch-navbar-sub {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
   padding: 5px;
   gap: 1px;
 }
-.navigation-btn::-webkit-scrollbar {
+.ch-navbar-sub::-webkit-scrollbar {
   overflow: hidden;
 }
-.navigation-btn .navigation-btn {
+.ch-navbar-sub .ch-sub-item {
   display: inline-block;
   padding: 5px 14px;
   margin-left: 4px;
@@ -517,7 +517,7 @@ body {
   transition: border-color 0.3s ease;
 }
 
-.navigation-btn .navigation-btn.active {
+.ch-sub-item button.active {
   border-bottom: 2px solid #ff0000;
 }
 
