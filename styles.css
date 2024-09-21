@@ -23,12 +23,13 @@ body {
 
   --title-color: #0f0f0f;
   --paragraph-color: #282828;
+  --link-color: #3EA6FF;
 
   --icon-color: #0f0f0f;
   --icon-background-color: #dbdbdb;
 
   --open-page-btn-color: #ff0000;
-  --action-menu-btn: #4d3636;
+  --action-menu-btn: #ffe8d4;
 
   --active-color: #a2a2a2;
 
@@ -38,8 +39,9 @@ body {
 .dark-mode {
   --main-color: #0f0f0f;
 
-  --title-color: #f1f1f1;
-  --paragraph-color: #6d6d6d;
+  --title-color: #F1F1F1;
+  --paragraph-color: #AAAAAA;
+   --link-color: #3EA6FF;
 
   --icon-color: #f9f9f9;
   --icon-background-color: #272727;
@@ -71,11 +73,12 @@ body {
   z-index: 1000;
 }
 
-.navbar-top a h1 {
-  font: 1rem 600;
+.navbar-top h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--title-color);
 }
-.navbar-top a h1:active {
+.navbar-top h1:active {
   color: var(--active-color);
 }
 .navbar-top nav {
@@ -162,10 +165,6 @@ body {
   color: var(--title-color);
 }
 
-.content .video-card .video-info .video-info-box {
-  align-items: center;
-  margin-left: 10px;
-}
 .content .video-card .video-info .video-info-box h2 {
   margin: 5px;
   font-size: 0.9rem;
@@ -423,7 +422,7 @@ body {
 }
 
 .settings-content button:active {
-  background: var(--active);
+  background: var(--active-color);
 }
 
 /*general*/
@@ -495,205 +494,169 @@ body {
 }
 
 .suggestion-item:active {
-  background-color: var(--active);
+  background-color: var(--active-color);
 }
+
+
 
 /**** channal ****/
-.channel-banner {
+.channal-content {
+  overflow-y: auto;
+}
+.channal-content .channal-top-section {
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+}
+.channal-content .channal-top-section .channal-banner {
   width: 100%;
   height: 100px;
-  overflow: hidden;
-  padding: 0px 10px;
-}
-
-.channel-banner img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
-
-.channel-info {
+.channal-content .channal-top-section .channal-info {
   display: flex;
-  align-items: center;
-  padding: 15px;
+  margin: 20px 0;
+  gap: 10px;
 }
-
-.channel-info img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin-right: 10px;
-  flex-shrink: 0;
+.channal-content .channal-top-section .channal-info img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50px;
 }
-.channel-info .info-box {
+.channal-content .channal-top-section .channal-info .channal-info-box {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.channel-info .info-box h2 {
-  font-size: 1.2rem;
+.channal-content .channal-top-section .channal-info .channal-info-box h2 {
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--title-color);
 }
-
-.channel-info .info-box p {
-  color: var(--paragraph-color);
-  font-size: 0.9rem;
-  margin-top: 5px;
-}
-
-.channel-description {
-  margin: 0 0 20px 15px;
-}
-.channel-description p {
-  color: var(--paragraph-color);
-  font-size: 0.9rem;
-}
-.subscribe-btn {
-  align-content: center;
-  margin: 0 15px 15px 15px;
-}
-
-.subscribe-btn button {
-  width: 100%;
-  background-color: #ff0000;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+.channal-content .channal-top-section .channal-info .channal-info-box p {
   font-size: 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  color: var(--paragraph-color);
 }
-
-.subscribe-btn button:active {
-  background-color: #cc0000;
+.channal-content .channal-top-section .channal-link {
+  display: flex;
+  flex-direction: column;
 }
-
-/* Navigation Tabs */
-.ch-navbar-sub {
+.channal-content .channal-top-section .channal-link p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--paragraph-color);
+}
+.channal-content .channal-top-section .channal-link p a {
+  color: var(--link-color);
+}
+/*** section ***/
+.channal-content .channal-main-section {
+  width: 100%;
+}
+.channal-main-section .channal-navigayion-btn {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  padding: 5px;
-  gap: 1px;
+  margin-top: 10px;
+  padding: 0 15px;
+  gap: 5px;
 }
-.ch-navbar-sub::-webkit-scrollbar {
+.channal-content .channal-main-section .channal-navigayion-btn::-webkit-scrollbar {
   overflow: hidden;
 }
-.ch-navbar-sub .ch-sub-item {
+.channal-content .channal-main-section .channal-navigayion-btn a {
   display: inline-block;
-  padding: 5px 14px;
-  margin-left: 4px;
+  padding: 7px 14px;
   color: var(--title-color);
   cursor: pointer;
   flex-shrink: 0;
+  border-radius: 10px;
   height: 100%;
   align-content: center;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-}
-
-.ch-sub-item button.active {
-  border-bottom: 2px solid #ff0000;
-}
-
-/* Tab Content */
-.tab-content {
-  padding: 10px 15px;
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-.tab-content .video-grid .ch-video-list {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 20px;
-}
-.tab-content .video-grid .ch-video-list::-webkit-scrollbar {
-  overflow: hidden;
-}
-.ch-video-item {
-  margin-right: 10px;
-  width: 300px;
-}
-.tab-content .video-grid .ch-video-list .ch-video-item img {
-  width: 320px;
-  height: 180px;
-  border-radius: 15px;
-  object-fit: cover;
-}
-
-.tab-content .video-grid .ch-video-list .ch-video-item h3 {
-  margin: 10px 0 5px;
   font-size: 1rem;
-  color: var(--title-color);
-}
-
-.tab-content .video-grid .ch-video-list .ch-video-item p {
-  font-size: 14px;
-  color: var(--paragraph-color);
-}
-.tab-content .video-grid .Toplist {
-  color: var(--title-color);
-  font-size: 1.2rem;
-  margin: 0 0 10px 0;
+  font-weight: 500; 
 }
 /***/
-.tab-content .ch-ranking-but {
-  display: flex;
-  margin: 0 0 25px;
-  width: auto;
-  gap: 10px;
-}
-.tab-content .ch-ranking-but button {
-  width: 70px;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  align-content: center;
-  cursor: pointer;
-  font-weight: 700;
-}
-/*** card ***/
-.tab-content .video-grid {
+.channal-content .channal-main-section .best-video {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+  margin: 10px 0;
 }
-.tab-content .video-grid .video-card {
+.channal-content .channal-main-section .best-video img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.channal-content .channal-main-section .best-video h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--title-color);
+  margin-bottom: 5px;
+  padding: 0 12px;
+}
+/***/
+.channal-content .channal-main-section .videos-section {
   display: flex;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
-  align-items: center;
-  background: transparent;
-  border: none;
+  flex-direction: column;
+  margin: 10px 0;
+  gap: 10px;
 }
-.tab-content .video-grid .video-card img {
+.channal-content .channal-main-section .videos-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--title-color);
+  margin: 0 12px;
+}
+.channal-content .channal-main-section .videos-section .video-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.channal-content .channal-main-section .videos-section .video-card .video-info img {
+  object-fit: cover;
   width: 160px;
   height: 90px;
-  border-radius: 15px;
+  border-radius: 4px; 
+  margin-right: 10px;
 }
-
-.tab-content .video-grid .video-card .ch-videod {
-  top: 50px;
+.channal-content .channal-main-section .videos-section .video-card .video-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
-.tab-content .video-grid .video-card .ch-videod h3 {
-  margin: 10px;
-  font-size: 0.9rem;
+.channal-content .channal-main-section .videos-section .video-card .video-info .video-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.channal-content .channal-main-section .videos-section .video-card .video-info .video-info-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--title-color);
 }
-.tab-content .video-grid .video-card .ch-videod p {
-  margin: 10px;
+.channal-content .channal-main-section .videos-section .video-card .video-info .video-info-box p {
+  font-size: 0.9rem;
+  font-weight: 500;
   color: var(--paragraph-color);
-  font-size: 0.7rem;
 }
+.channal-content .channal-main-section .videos-section .video-card .action-menu-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: var(--icon-color);
+  padding: 5px 15px;
+  margin-right: 15px;
+}
+.channal-content .channal-main-section .videos-section .video-card .action-menu-btn:active {
+  background-color: var(--action-menu-btn);
+}
+
 
 /****** subscribers ****/
 .sub-info {
