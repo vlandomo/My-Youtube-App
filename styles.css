@@ -132,7 +132,6 @@ body {
 .content .video-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--icon-background-color);
 }
 
 .content .video-card img {
@@ -146,35 +145,35 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 0 15px 15px;
+  padding: 5px 0 12px 12px;
 }
 
 .content .video-card .video-info img {
   object-fit: cover;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
 }
 
 .content .video-card .video-info .video-info-box {
-  align-items: center;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px;
+  gap: 2px;
 }
 
 .content .video-card .video-info a {
   color: var(--title-color);
 }
 
-.content .video-card .video-info .video-info-box h2 {
-  margin: 5px;
+.content .video-card .video-info .video-info-box h3 {
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--title-color);
 }
 
 .content .video-card .video-info p {
-  margin: 5px;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   color: var(--paragraph-color);
 }
 .content .video-card .video-info .video-info-box:active {
@@ -311,28 +310,35 @@ body {
   box-sizing: border-box;
   align-items: center;
   width: 100%;
-  gap: 20px;
+  gap: 10px;
   padding: 2px 20px;
   color: var(--title-color);
 }
 
 .acontent .aprofile img {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   border-radius: 50px;
 }
 .acontent .aprofile .account-info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
+  color: var(--title-color);
 }
 .acontent .aprofile .account-info h2 {
   font-size: 1.2rem;
   font-weight: 600;
+  color: var(--paragraph-color);
 }
 .acontent .aprofile .account-info p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 500;
+}
+.acontent .aprofile .account-info p span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--paragraph-color);
 }
 .acontent .acontent-title {
   display: flex;
@@ -342,24 +348,27 @@ body {
   color: var(--title-color);
   font-size: 0.9rem;
 }
-.acontent .acontent-title h2 {
+.acontent .acontent-title h3 {
   font-size: 1.1rem;
   font-weight: 600;
+  color: var(--title-color);
 }
 .acontent .acontent-title button {
   display: flex;
-  padding: 5px 10px;
-  border: none;
+  padding: 4px 8px;
+  color: var(--title-color);
+  border: 1px solid var(--title-color);
+  background-color: transparent;
   border-radius: 25px;
-  height: 40px;
+  height: 30px;
   align-items: center;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
 .acontent .acontent-title button:active {
-  background: var(--active);
+  background: var(--active-color);
 }
 
 .acontent .avideo-list {
@@ -367,7 +376,7 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 12px;
 }
 .acontent .avideo-list::-webkit-scrollbar {
   overflow: hidden;
@@ -376,27 +385,48 @@ body {
 .acontent .avideo-list .avideo-item {
   flex: 0 0 auto;
   margin-right: 10px;
-  width: 150px;
+  width: 160px;
 }
 .acontent .avideo-list .avideo-item img {
   width: 100%;
-  height: 50%;
+  height: 90px;
   border-radius: 15px;
   object-fit: cover;
 }
 
 .acontent .avideo-list .avideo-item .avid-link h3 {
-  margin: 10px 0 5px;
+  margin: 5px 0;
   font-size: 1rem;
   font-weight: 500;
   color: var(--title-color);
 }
 
 .acontent .avideo-list .avideo-item .avid-link p {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
   color: var(--paragraph-color);
 }
+/***/
+.acontent .bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 20px;
+}
+.acontent .bottom-section button {
+  text-align: left;
+  padding: 12px;
+  background-color: transparent;
+  color: var(--title-color);
+  border: none;
+}
+.acontent .bottom-section button i {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.acontent .bottom-section button:active {
+  background: var(--active-color);
+}
+
 
 /*** settings ***/
 .navbar-top .setting-title {
@@ -662,6 +692,8 @@ body {
 .sub-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 .sub-info .sub-link {
   text-decoration: none;
@@ -678,16 +710,17 @@ body {
   font-size: 0.9rem;
 }
 .sub-info .sub-link img {
-  width: 70px;
-  height: 70px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0px 15px;
 }
-.sub-info .sub-icon a {
+.sub-info .sub-icon {
   color: var(--icon-color);
   font-size: 1rem;
   background: var(--icon-background-color);
+  margin-right: 12px;
   padding: 5px 10px;
   border-radius: 15px;
 }
