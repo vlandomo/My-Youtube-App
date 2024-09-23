@@ -105,7 +105,7 @@ const suggestions = [
   "Yellow passion fruit", "Zucchini", "Mohammed", "Saber", "Ahmad", "Naser", 
   "MV Mohammed", "Kareem", "Ibrahim", "Football", "Karata", "Boxing", "PC", "HDD", 
   "SSD", "PC fan", "PC power supply", "Motherboard", "CPU", "GPU", "PC cooler", 
-  "Free Palestine", "KSM Israel", "Samsung", "Egypt"
+  "Free Palestine", "KSM Israel", "Samsung", "Egypt" ,"يلعن ميتين ام اسرائل"
 ];
 
 // Elements for search box and suggestions
