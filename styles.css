@@ -716,7 +716,7 @@ body {
   object-fit: cover;
   margin: 0px 15px;
 }
-.sub-info .sub-icon {
+.sub-info .sub-icon a{
   color: var(--icon-color);
   font-size: 1rem;
   background: var(--icon-background-color);
